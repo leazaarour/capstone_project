@@ -14,7 +14,7 @@ from sklearn.neighbors import KNeighborsRegressor
 # App 1
 
 def load_data():
-    df = pd.read_csv('/Users/leazaarour/Desktop/data.csv')
+    df = pd.read_csv('data.csv')
 
     df = df.applymap(lambda x: 1 if x is True else 0 if x is False else x)
     df['disable_person_hh'] = df['disable_person_hh'].apply(lambda x: 1 if x == 'Atleast_one_disable_person' else 0 if x == 'No_disable_person' else x)
@@ -119,7 +119,7 @@ def create_and_train_model(df):
 
 def load_data2():
     # Load data
-    df = pd.read_csv('D:/April 2023/Lea/data.csv')
+    df = pd.read_csv('data.csv')
 
     # Preprocessing steps
     df = df.applymap(lambda x: 1 if x is True else 0 if x is False else x)
