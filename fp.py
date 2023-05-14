@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 from xgboost import XGBRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.neighbors import KNeighborsRegressor
+import altair
 
 # App 1
 
